@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color:black;
+  box-shadow: 0 5px 15px rgba(212, 200, 200, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.header .logo {
+  height: 100px;
+}
+.header .main {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 24px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1a20e;
+  transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: #ef6389;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+.hero{
+  background: url(pxhero2.jpg);
+  min-height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+  height: 90vh;
+  width: auto;
+  line-height: 0.1;
+}
+.hero h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(177, 117, 242);
+  font-size: 50px;
+  padding-bottom: 60px;
+}
+.hero h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+  padding-bottom: 30px;}
+.hero p{
+  width: 40%;
+  text-align: center;
+  line-height: 20px;
+  padding-bottom: 10px;
+ 
+  color: #fed87f;
+
+}
+.hero button{
+  border: 0;
+  padding: 14px 80px 14px 64px;
+  background-color: #cd331e;
+  color: #070707;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 20px;
+ 
+}
+.hero button:hover{
+  background-color: #5ce5f5;
+  color: #030303;
+}
